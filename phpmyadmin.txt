@@ -1,0 +1,10 @@
+//freesqldatabase
+
+Host: sql5.freesqldatabase.com
+Database name: sql5746470
+Database user: sql5746470
+Database password: CQbs1PxEH5
+Port number: 3306
+
+
+// projetsmartCarte

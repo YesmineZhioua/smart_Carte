@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>SmartCarte</title>
+</head>
+
+<body>
+    <!--navbar-->
+
+    <nav class="menu-bar">
+
+        <ul class="links">
+            <div class="logo"> <img class="logoimg" src="./image/Institut_Supérieur_d'Informatique_(logo).svg.png"
+                    alt="">
+            </div>
+            <!--            <li><a href="Classe.html">Class</a></li>-->
+            <a class="logout" href="logout.html">LogOut</a>
+        </ul>
+    </nav>
+   
+
+    <div class="progress-container">
+        <div class="progress-circle-Ab">
+            <p>40%</p>
+            <span>Absence</span>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress-circle-Pr">
+            <p>60%</p>
+            <span>Présence</span>
+        </div>
+    </div>
+    <div class="progress-container">
+
+    <center class="cord" style="padding-top: 110px; ">
+        <table>
+           
+            <tbody>
+                <!-- Ligne 1 : Nom Etudiant -->
+                <tr>
+                  <th><h3>Etudiant :  </h3></th>
+                  <td>Yesmine Zhioua</td>
+                </tr>
+                
+                <!-- Ligne 2 : Classe Etudiant -->
+                <tr>
+                  <th><h3>Classe :  </h3></th>
+                  <td>2ING1</td>
+                </tr>
+                
+                <!-- Ligne 3 : CarteID Etudiant -->
+                <tr>
+                  <th><h3>CarteID :  </h3></th>
+                  <td>126743</td>
+                </tr>
+              </tbody>
+        </table>
+    </center>
+</div>
+
+
+
+
+    <table class="test-plan">
+        <thead>
+            <tr>
+                <th>idSalle</th>
+                <th>CIN </th>
+                <th>Jours</th>
+                <th>DateDebut</th>
+                <th>Cours</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>209</td>
+                <td> 11111111</td>
+                <td>22/10/2024</td>
+                <td>12H</td>
+                <td>Genie Logiciel</td>
+                <td><button type="button" class="btn btn-success">Présent</button>
+                    <button type="button" class="btn btn-danger">Absent</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Ajouter d'autres lignes ici -->
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

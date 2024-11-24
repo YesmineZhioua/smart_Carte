@@ -1,0 +1,38 @@
+<script>
+    const registerForm = document.querySelector('form');
+
+    registerForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Récupérer les valeurs du formulaire
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const login = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Préparer les données pour l'API
+        const payload = { login, password };
+
+        try {
+            // Envoyer une requête POST au backend
+          //  const response = await fetch('http://localhost:8082/api/admin/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+                alert('Registration successful');
+                // Redirigez vers la page de connexion
+                window.location.href = '/login.html';
+            } else {
+                alert('Registration failed');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Something went wrong!');
+        }
+    });
+</script>

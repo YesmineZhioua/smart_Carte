@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Placez le script ici -->
+    <script>
+        const loginForm = document.querySelector('#loginForm');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const login = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const payload = { login, password };
+
+            try {
+                //const response = await fetch('http://localhost:8082/api/admin/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+
+                if (response.ok) {
+                    alert('Login successful');
+                    window.location.href = '/home.html';
+                } else {
+                    alert('Invalid login or password');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Something went wrong!');
+            }
+        });
+    </script>
+</body>
+</html>
