@@ -23,7 +23,7 @@ public class Salle {
 
 
         @JsonFormat(pattern = "yyyy-MM-dd")
-        @Column(name = "jour", nullable = false)
+        @Column(name = "jour")
         private Date jour;
 
 

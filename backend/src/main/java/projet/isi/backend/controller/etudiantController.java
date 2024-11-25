@@ -116,6 +116,16 @@ public class etudiantController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
             }
         }
+
+
+
+        //ajouter etudiant dans system
+
+    @PostMapping("/addEtuSys")
+    public ResponseEntity<Etudiant> addEtudiant(@RequestBody Etudiant etudiant) {
+        Etudiant savedEtudiant = etudiantService.addEtudiantWithSystem(etudiant);
+        return new ResponseEntity<>(savedEtudiant, HttpStatus.CREATED);
+    }
     }
 
 

@@ -31,6 +31,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                         .requestMatchers( "/api/etudiants/**").permitAll()
 
                         .requestMatchers( "/api/salles/**").permitAll()
+                        .requestMatchers( "/api/systems/**").permitAll()
 
                         .requestMatchers("/error").permitAll() // Permet l'accès à la page d'erreur
 
